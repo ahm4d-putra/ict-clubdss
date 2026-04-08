@@ -1,9 +1,7 @@
-import { motion } from 'framer-motion' // Pastikan ada kurung kurawal {}
+import { motion } from 'framer-motion'
 import { GraduationCap, Trophy, Briefcase, Users, CheckCircle2 } from 'lucide-react'
 import { useScrollAnimation, fadeInUp, staggerContainer, staggerItem } from '../hooks/useScrollAnimation'
 import { BENEFITS } from '../utils/constants'
-
-// ... (sisa kode Benefits sama persis)
 
 const iconMap = {
   GraduationCap: GraduationCap,
