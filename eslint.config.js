@@ -1,4 +1,3 @@
-// eslint.config.js
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
@@ -22,7 +21,6 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      // TAMBAHKAN INI: Ignore unused vars that start with lowercase (like 'motion')
       'no-unused-vars': 'off',
     },
   },

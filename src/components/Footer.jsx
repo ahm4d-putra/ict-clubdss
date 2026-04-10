@@ -87,9 +87,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 gap-3">
           <p>© {currentYear} {CLUB_INFO.name}</p>
 
-          <p className="flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-red-500" /> ICT Club
-          </p>
+          
         </div>
 
         {/* Ketua */}

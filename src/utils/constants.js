@@ -18,7 +18,7 @@ export const DIVISIONS = [
   },
   {
     id: 2,
-    title: 'Cyber Security',
+    title: 'IOT',
     description: 'Pelajari seni melindungi sistem dan jaringan. Menjadi guardian di dunia digital yang penuh ancaman.',
     icon: 'Shield',
     gradient: 'from-teal-500 to-cyan-500',
@@ -32,14 +32,6 @@ export const DIVISIONS = [
     gradient: 'from-blue-500 to-teal-500',
     skills: ['UI/UX', 'Figma', 'Adobe Suite', '3D Design']
   },
-  {
-    id: 4,
-    title: 'Networking',
-    description: 'Bangun dan kelola infrastruktur jaringan. Pahami seluk beluk koneksi dan komunikasi data.',
-    icon: 'Network',
-    gradient: 'from-cyan-500 to-teal-500',
-    skills: ['Cisco', 'Mikrotik', 'Server Management', 'Cloud Computing']
-  }
 ]
 
 // Benefits Data
@@ -73,7 +65,7 @@ export const BENEFITS = [
 // Social Links
 export const SOCIAL_LINKS = {
   instagram: 'https://instagram.com/ictclub',
-  whatsapp: 'https://wa.me/6281234567890'
+  whatsapp: 'https://wa.me/6289501524223'
 }
 
 // Google Form Link
@@ -82,7 +74,7 @@ export const REGISTRATION_LINK = 'https://forms.gle/your-form-link'
 // Club Info
 export const CLUB_INFO = {
   name: 'ICT Club',
-  school: 'SMAN 1 Technology',
-  ketua: 'Ahmad Rizky Pratama',
+  school: 'SMKN 20 JAKARTA',
+  ketua: 'Ahmad Putra Ramadhan',
   motto: 'Innovate, Create, Transform'
 }

@@ -1,9 +1,7 @@
-import { motion } from 'framer-motion' // Pastikan ada kurung kurawal {}
+import { motion } from 'framer-motion' 
 import { Code, Shield, Palette, Network, ArrowRight } from 'lucide-react'
 import { useScrollAnimation, fadeInUp, staggerContainer, staggerItem } from '../hooks/useScrollAnimation'
 import { DIVISIONS } from '../utils/constants'
-
-// ... (sisa kode Divisions sama persis)
 
 const iconMap = {
   Code: Code,

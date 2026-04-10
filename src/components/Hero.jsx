@@ -169,9 +169,9 @@ const Hero = () => {
           className="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto"
         >
           {[
-            { value: '100+', label: 'Anggota Aktif' },
+            { value: '36+', label: 'Anggota Aktif' },
             { value: '4', label: 'Divisi' },
-            { value: '50+', label: 'Prestasi' },
+            { value: '0', label: 'Prestasi' },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-gradient">{stat.value}</div>

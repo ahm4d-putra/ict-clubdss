@@ -106,7 +106,8 @@ const CTA = () => {
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-lg mb-10 max-w-xl mx-auto"
             >
-              Bergabunglah dengan ratusan siswa yang telah menemukan passion mereka di dunia teknologi. 
+              Ber
+              lah dengan ratusan siswa yang telah menemukan passion mereka di dunia teknologi. 
               Jalurmu menuju masa depan digital dimulai dari sini.
             </motion.p>
 
