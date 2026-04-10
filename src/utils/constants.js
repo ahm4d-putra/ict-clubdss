@@ -26,6 +26,14 @@ export const DIVISIONS = [
   },
   {
     id: 3,
+    title: 'Computer Vision',
+    description: 'Ciptakan visual yang memukau. Dari UI/UX design hingga graphic design, wujudkan kreativitasmu.',
+    icon: 'Palette',
+    gradient: 'from-blue-500 to-teal-500',
+    skills: ['Mediapipe', 'Python', 'Yolo', 'n8N']
+  },
+  {
+    id: 3,
     title: 'Design',
     description: 'Ciptakan visual yang memukau. Dari UI/UX design hingga graphic design, wujudkan kreativitasmu.',
     icon: 'Palette',
@@ -64,12 +72,12 @@ export const BENEFITS = [
 
 // Social Links
 export const SOCIAL_LINKS = {
-  instagram: 'https://instagram.com/ictclub',
+  instagram: 'https://instagram.com/ict20club',
   whatsapp: 'https://wa.me/6289501524223'
 }
 
 // Google Form Link
-export const REGISTRATION_LINK = 'https://forms.gle/your-form-link'
+export const REGISTRATION_LINK = 'hhttps://docs.google.com/forms/d/e/1FAIpQLSdQvk-6g3mEIGa_5hX8pI1eOXoLZMza54Cv6GgA7l3lbei71Q/viewform'
 
 // Club Info
 export const CLUB_INFO = {
@@ -77,4 +85,4 @@ export const CLUB_INFO = {
   school: 'SMKN 20 JAKARTA',
   ketua: 'Ahmad Putra Ramadhan',
   motto: 'Innovate, Create, Transform'
-}
+} 

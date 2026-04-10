@@ -95,15 +95,7 @@ const About = () => {
               </div>
 
               {/* Floating Badge */}
-              <motion.div
-                className="absolute -top-4 -right-4 p-4 rounded-2xl glass-card"
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 4, repeat: Infinity }}
-              >
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-gradient">5+</div>
-                  <div className="text-xs text-gray-400">Tahun Aktif</div>
-                </div>
+              <motion.div>
               </motion.div>
             </div>
           </motion.div>
