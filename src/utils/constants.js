@@ -1,3 +1,5 @@
+// src/utils/constants.js
+
 // Navigation Links
 export const NAV_LINKS = [
   { name: 'Home', href: '#home' },
@@ -11,7 +13,7 @@ export const DIVISIONS = [
   {
     id: 1,
     title: 'Programming',
-    description: 'Kuasai berbagai bahasa pemrograman dan bangun aplikasi impianmu. Dari web development hingga mobile apps.',
+    description: 'Kuasai berbagai bahasa pemrograman dan bangun aplikasi impianmu.',
     icon: 'Code',
     gradient: 'from-cyan-500 to-blue-500',
     skills: ['Python', 'JavaScript', 'React', 'Node.js']
@@ -19,23 +21,23 @@ export const DIVISIONS = [
   {
     id: 2,
     title: 'IOT',
-    description: 'Pelajari seni melindungi sistem dan jaringan. Menjadi guardian di dunia digital yang penuh ancaman.',
+    description: 'Eksplorasi Internet of Things. Hubungkan dunia fisik dengan digital.',
     icon: 'Shield',
     gradient: 'from-teal-500 to-cyan-500',
-    skills: ['Network Security', 'Ethical Hacking', 'CTF', 'Security Analysis']
+    skills: ['Sensor', 'Microcontroller', 'Arduino', 'ESP32']
   },
   {
     id: 3,
     title: 'Computer Vision',
-    description: 'Ciptakan visual yang memukau. Dari UI/UX design hingga graphic design, wujudkan kreativitasmu.',
-    icon: 'Palette',
+    description: 'Implementasi kecerdasan buatan untuk pengolahan gambar dan video.',
+    icon: 'Eye',
     gradient: 'from-blue-500 to-teal-500',
     skills: ['Mediapipe', 'Python', 'Yolo', 'n8N']
   },
   {
-    id: 3,
+    id: 4,
     title: 'Design',
-    description: 'Ciptakan visual yang memukau. Dari UI/UX design hingga graphic design, wujudkan kreativitasmu.',
+    description: 'Ciptakan visual yang memukau. Dari UI/UX hingga graphic design.',
     icon: 'Palette',
     gradient: 'from-blue-500 to-teal-500',
     skills: ['UI/UX', 'Figma', 'Adobe Suite', '3D Design']
@@ -47,7 +49,7 @@ export const BENEFITS = [
   {
     id: 1,
     title: 'Belajar dari Basic',
-    description: 'Tidak perlu pengalaman sebelumnya. Kami akan membimbingmu dari nol hingga mahir.',
+    description: 'Tidak perlu pengalaman sebelumnya. Kami akan membimbingmu dari nol.',
     icon: 'GraduationCap'
   },
   {
@@ -76,8 +78,8 @@ export const SOCIAL_LINKS = {
   whatsapp: 'https://wa.me/6289501524223'
 }
 
-// Google Form Link
-export const REGISTRATION_LINK = 'hhttps://docs.google.com/forms/d/e/1FAIpQLSdQvk-6g3mEIGa_5hX8pI1eOXoLZMza54Cv6GgA7l3lbei71Q/viewform'
+
+export const REGISTRATION_LINK = ' https://forms.gle/TgaL51HmmVG12BH3A'
 
 // Club Info
 export const CLUB_INFO = {
@@ -85,4 +87,4 @@ export const CLUB_INFO = {
   school: 'SMKN 20 JAKARTA',
   ketua: 'Ahmad Putra Ramadhan',
   motto: 'Innovate, Create, Transform'
-} 
+}

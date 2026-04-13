@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion' 
-import { Code, Shield, Palette, Network, ArrowRight } from 'lucide-react'
+import { Code, Shield, Palette, Network, ArrowRight, Eye } from 'lucide-react'
 import { useScrollAnimation, fadeInUp, staggerContainer, staggerItem } from '../hooks/useScrollAnimation'
 import { DIVISIONS } from '../utils/constants'
 
@@ -8,6 +8,7 @@ const iconMap = {
   Shield: Shield,
   Palette: Palette,
   Network: Network,
+  Eye: Eye,
 }
 
 const Divisions = () => {
