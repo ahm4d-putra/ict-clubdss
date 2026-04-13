@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { GraduationCap, Trophy, Briefcase, Users, CheckCircle2 } from 'lucide-react'
+import { GraduationCap, Trophy, Briefcase, Users } from 'lucide-react'
 import { useScrollAnimation, fadeInUp, staggerContainer, staggerItem } from '../hooks/useScrollAnimation'
 import { BENEFITS } from '../utils/constants'
 
@@ -47,7 +47,7 @@ const Benefits = () => {
           variants={staggerContainer}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {BENEFITS.map((benefit) => {
             const IconComponent = iconMap[benefit.icon]
@@ -77,67 +77,6 @@ const Benefits = () => {
               </motion.div>
             )
           })}
-        </motion.div>
-
-        {/* Additional Info Card */}
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="relative"
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent-blue/10 rounded-3xl blur-2xl" />
-          
-          <div className="relative glass-card rounded-3xl p-8 md:p-12">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-              <div className="flex-1">
-                <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
-                  Perjalanan Belajar Terstruktur
-                </h3>
-                <p className="text-gray-400 mb-6">
-                  Kami menyediakan roadmap belajar yang jelas dari level dasar hingga mahir. 
-                  Setiap anggota akan dibimbing oleh mentor berpengalaman di bidangnya.
-                </p>
-                
-                {/* Checklist */}
-                <ul className="space-y-3">
-                  {[
-                    'Materi terstruktur dan update',
-                    'Mentoring 1-on-1',
-                    'Project-based learning',
-                    'Sertifikat keikutsertaan'
-                  ].map((item, index) => (
-                    <motion.li
-                      key={index}
-                      className="flex items-center gap-3 text-gray-300"
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      viewport={{ once: true }}
-                    >
-                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                      <span>{item}</span>
-                    </motion.li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Stats */}
-              <div className="flex gap-8 lg:gap-12">
-                {[
-                  { value: '50+', label: 'Mentor' },
-                  { value: '30+', label: 'Modul' },
-                  { value: '100+', label: 'Project' }
-                ].map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-gradient">{stat.value}</div>
-                    <div className="text-sm text-gray-500">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

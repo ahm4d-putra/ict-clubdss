@@ -3,7 +3,7 @@ import { Target, Rocket, Users, Lightbulb } from 'lucide-react'
 import { useScrollAnimation, fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerItem } from '../hooks/useScrollAnimation'
 import { CLUB_INFO } from '../utils/constants'
 
-// ... (sisa kode About sama persis)
+
 
 const About = () => {
   const { ref, isInView } = useScrollAnimation()

@@ -1,15 +1,9 @@
-import { motion } from 'framer-motion' // Pastikan ada kurung kurawal {}
+import { motion } from 'framer-motion'
 import { Sparkles, ArrowRight, Zap } from 'lucide-react'
 import { REGISTRATION_LINK } from '../utils/constants'
 import { fadeInUp, scaleIn } from '../hooks/useScrollAnimation'
 
-// ... (sisa kode CTA sama persis)
-
 const CTA = () => {
-  const handleRegister = () => {
-    window.location.href = REGISTRATION_LINK
-  }
-
   return (
     <section id="join" className="relative py-24 sm:py-32 overflow-hidden">
       {/* Animated Background */}
@@ -47,23 +41,23 @@ const CTA = () => {
           className="relative"
         >
           {/* Outer Glow */}
-          <div className="absolute -inset-4 bg-gradient-to-r from-primary/30 via-accent-cyan/30 to-accent-blue/30 rounded-[40px] blur-3xl opacity-50" />
+          <div className="absolute -inset-4 bg-gradient-to-r from-primary/30 via-accent-cyan/30 to-accent-blue/30 rounded-[40px] blur-3xl opacity-50 pointer-events-none" />
           
           {/* Main Card */}
           <div className="relative glass-card rounded-3xl p-8 sm:p-12 md:p-16 text-center overflow-hidden">
             {/* Top Decoration */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent pointer-events-none" />
             
             {/* Floating Elements */}
             <motion.div
-              className="absolute -top-8 -left-8 p-4 rounded-2xl glass-card"
+              className="absolute -top-8 -left-8 p-4 rounded-2xl glass-card pointer-events-none"
               animate={{ rotate: [0, 10, 0] }}
               transition={{ duration: 6, repeat: Infinity }}
             >
               <Zap className="w-6 h-6 text-primary" />
             </motion.div>
             <motion.div
-              className="absolute -bottom-8 -right-8 p-4 rounded-2xl glass-card"
+              className="absolute -bottom-8 -right-8 p-4 rounded-2xl glass-card pointer-events-none"
               animate={{ rotate: [0, -10, 0] }}
               transition={{ duration: 8, repeat: Infinity }}
             >
@@ -106,12 +100,11 @@ const CTA = () => {
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-lg mb-10 max-w-xl mx-auto"
             >
-              Ber
-              lah dengan ratusan siswa yang telah menemukan passion mereka di dunia teknologi. 
+              Bergabunglah dengan ratusan siswa yang telah menemukan passion mereka di dunia teknologi. 
               Jalurmu menuju masa depan digital dimulai dari sini.
             </motion.p>
 
-            {/* CTA Button */}
+            {/* CTA Button - FIXED: Pure <a> tag for maximum compatibility */}
             <motion.div
               variants={fadeInUp}
               initial="hidden"
@@ -119,14 +112,16 @@ const CTA = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <motion.button
-                onClick={handleRegister}
-                className="group relative inline-flex items-center gap-3"
+              <motion.a
+                href={REGISTRATION_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center gap-3 cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 {/* Button Glow */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent-cyan to-accent-blue rounded-2xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent-cyan to-accent-blue rounded-2xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity pointer-events-none" />
                 
                 {/* Button Background */}
                 <div className="relative px-10 py-5 rounded-2xl bg-gradient-to-r from-primary via-accent-cyan to-accent-blue text-white font-bold text-lg">
@@ -136,7 +131,7 @@ const CTA = () => {
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
-              </motion.button>
+              </motion.a>
             </motion.div>
 
             {/* Sub-text */}
