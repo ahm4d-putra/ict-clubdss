@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Heart, Cpu } from 'lucide-react'
-import { CLUB_INFO, SOCIAL_LINKS, NAV_LINKS } from '../utils/constants'
+import { Mail, Phone, MapPin, Cpu } from 'lucide-react'
+import { CLUB_INFO, NAV_LINKS } from '../utils/constants'
+import MapEmbed from './MapEmbed'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -21,6 +22,8 @@ const Footer = () => {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* MAIN GRID */}
         <div className="grid md:grid-cols-3 gap-12 mb-12">
 
           {/* Brand */}
@@ -68,7 +71,7 @@ const Footer = () => {
 
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Phone className="w-4 h-4" />
-                <span>+62 812-3456-7890</span>
+                <span>+62 895 0152 4223</span>
               </li>
 
               <li className="flex items-center gap-3 text-gray-400 text-sm">
@@ -80,14 +83,26 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* MAP SECTION */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-12"
+        >
+          <h4 className="text-white font-semibold mb-4">
+            Lokasi Kami
+          </h4>
+
+          <MapEmbed />
+        </motion.div>
+
         {/* Divider */}
         <div className="h-px bg-dark-700 mb-6" />
 
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 gap-3">
           <p>© {currentYear} {CLUB_INFO.name}</p>
-
-          
         </div>
 
         {/* Ketua */}
@@ -99,6 +114,7 @@ const Footer = () => {
         >
           Ketua: {CLUB_INFO.ketua}
         </motion.div>
+
       </div>
     </footer>
   )
